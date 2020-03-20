@@ -29,7 +29,7 @@ public class LoadController {
 	@Autowired
 	Job job;
 			
-	@GetMapping
+	@GetMapping("/user")
 	public BatchStatus load() throws JobParametersInvalidException,JobExecutionException{
    
 	Map<String,JobParameter> maps=new HashMap<>();

@@ -3,8 +3,10 @@ package com.user.demo.model;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
+import javax.persistence.Table;
 
 @Entity
+@Table
 public class User {
 	@Id
 	@GeneratedValue
