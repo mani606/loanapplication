@@ -14,9 +14,9 @@ public class Processor implements ItemProcessor<User,User>{
 
 public static final Map<String,String> NAMES = new HashMap<>();
 public Processor() {
-	NAMES.put("101","ANITHA");
-	NAMES.put("102","manoj");
-	NAMES.put("103","navaneeth");
+	NAMES.put("1","emp1");
+	NAMES.put("2","emp2");
+	NAMES.put("3","emp3");
 }
 
 	@Override
@@ -28,6 +28,19 @@ public Processor() {
 		return user;
 		
 	}
+	
+//	@Override
+//	  public User process(final User User) throws Exception {
+//	    final String name = User.getName();
+//	    final int age = User.getAge();
+//	    final String pan = User.getPan().toUpperCase();
+//	    final String aadhar = User.getAadhar();
+//	    final String gender = User.getGender();
+//	    final int salary = User.getSalary();
+//
+//	    final User processedUser = new User(1,name, gender,salary,age,pan, aadhar);
+//	    return processedUser;
+//	  }
 
 	
 }
